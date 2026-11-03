@@ -1,0 +1,14 @@
+{
+  "$schema": "https://modelcontextprotocol.io",
+  "name": "io.github.massnerder-mcp.web-scraper-mcp",
+  "description": "High-performance web scraper, optimized with custom automated proxy routing, 5MB caps, media blocks, and decentralized native x402 micropayments.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com",
+    "source": "github"
+  },
+  "transport": {
+    "type": "http",
+    "url": "https://fretful-flap.ngrok.dev"
+  }
+}
