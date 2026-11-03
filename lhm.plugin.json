@@ -1,0 +1,8 @@
+{
+  "identifier": "massnerder-mcp-web-scraper",
+  "name": "Web Scraper MCP",
+  "version": "1.0.0",
+  "description": "High-performance web scraper, optimized with custom automated proxy routing, 5MB caps, media blocks, and decentralized native x402 micropayments.",
+  "tags": ["scraper", "web", "proxy", "x402", "micropayments"],
+  "cloudEndpoint": "https://fretful-flap.ngrok.dev"
+}
