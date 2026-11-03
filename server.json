@@ -1,14 +1,26 @@
 {
-  "$schema": "https://modelcontextprotocol.io",
-  "name": "io.github.massnerder-mcp.web-scraper-mcp",
-  "description": "High-performance web scraper, optimized with custom automated proxy routing, 5MB caps, media blocks, and decentralized native x402 micropayments.",
+  "$schema": "https://lobehub.com",
+  "identifier": "io.github.massnerder-mcp.web-scraper-mcp",
+  "author": "massnerder-mcp",
   "version": "1.0.0",
-  "repository": {
-    "url": "https://github.com",
-    "source": "github"
+  "type": "mcp",
+  "meta": {
+    "title": "High-Performance Web Scraper",
+    "description": "Optimized web scraper featuring custom proxy routing, 5MB traffic caps, media element blocking, and native decentralized x402 micropayments.",
+    "avatar": "🕸️",
+    "tags": ["scraper", "web", "proxy", "x402", "micropayments"]
   },
-  "transport": {
-    "type": "http",
-    "url": "https://fretful-flap.ngrok.dev"
-  }
+  "settings": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  },
+  "mcp": {
+    "transport": {
+      "type": "http",
+      "url": "https://fretful-flap.ngrok.dev"
+    }
+  },
+  "repository": "https://github.com/massnerder-mcp/mcp-server-manifest"
 }
+
