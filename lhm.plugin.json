@@ -1,26 +1,44 @@
 {
-  "identifier": "massnerder-mcp-web-scraper",
-  "name": "Multi-Tier Web Scraper & Structured Data MCP Gateway",
+  "$schema": "https://lobehub.com",
+  "identifier": "web-scraper-x402",
   "version": "2.0.0",
-  "description": "Tiered x402 web extraction gateway on Base: $0.01 fast HTML-to-Markdown and XML sitemap discovery, $0.05 Schema.org JSON-LD structured data, $0.10 residential proxy and headless Chromium anti-bot bypass, and $0.25 multi-URL batch scraping (up to 10 URLs).",
-  "tags": [
-    "web-scraping",
-    "scraper",
-    "web",
-    "proxy",
-    "x402",
-    "micropayments",
-    "json-ld",
-    "sitemap",
-    "playwright"
-  ],
-  "cloudEndpoint": "https://fretful-flap.ngrok.dev/mcp",
-  "endpoints": {
-    "streamableHttp": "https://fretful-flap.ngrok.dev/mcp",
-    "sse": "https://fretful-flap.ngrok.dev/mcp/sse",
-    "health": "https://fretful-flap.ngrok.dev/health",
-    "paymentInfo": "https://fretful-flap.ngrok.dev/get_service_info",
-    "llmsTxt": "https://fretful-flap.ngrok.dev/llms.txt"
+  "type": "mcp",
+  "meta": {
+    "title": "Multi-Tier Web Scraper & Structured Data MCP Gateway",
+    "description": "Tiered x402 web extraction gateway on Base: $0.01 fast Markdown & sitemap discovery, $0.05 Schema.org JSON-LD structured data, $0.10 residential proxy & headless browser anti-bot bypass, and $0.25 async multi-URL batch scraping.",
+    "author": "dji112062126-cyber",
+    "homepage": "https://x402scrapes.com",
+    "repository": "https://github.com/dji112062126-cyber/x402-web-scraper-mcp",
+    "tags": [
+      "web-scraping",
+      "scraping",
+      "mcp",
+      "x402",
+      "ai-data",
+      "markdown",
+      "anti-bot",
+      "json-ld",
+      "sitemap",
+      "playwright"
+    ]
+  },
+  "mcp": {
+    "transport": {
+      "type": "streamable-http",
+      "url": "https://x402scrapes.com"
+    },
+    "legacySse": {
+      "type": "sse",
+      "url": "https://x402scrapes.com/sse"
+    }
+  },
+  "payment": {
+    "protocol": "x402",
+    "network": "base",
+    "chainId": 8453,
+    "token": "USDC",
+    "tokenAddress": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "recipient": "0x48D94E7395Ad651a4c393158eE555C4d3aA56E5e",
+    "header": "X-402-Payment"
   }
 }
-
