@@ -1,14 +1,14 @@
 {
   "$schema": "https://lobehub.com",
   "identifier": "web-scraper-x402",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "type": "mcp",
   "meta": {
     "title": "Multi-Tier Web Scraper & Structured Data MCP Gateway",
     "description": "Tiered x402 web extraction gateway on Base: $0.01 fast Markdown & sitemap discovery, $0.05 Schema.org JSON-LD structured data, $0.10 residential proxy & headless browser anti-bot bypass, and $0.25 async multi-URL batch scraping.",
-    "author": "dji112062126-cyber",
+    "author": "massnerder",
     "homepage": "https://x402scrapes.com",
-    "repository": "https://github.com/dji112062126-cyber/x402-web-scraper-mcp",
+    "repository": "https://github.com",
     "tags": [
       "web-scraping",
       "scraping",
@@ -30,6 +30,10 @@
     "legacySse": {
       "type": "sse",
       "url": "https://x402scrapes.com/sse"
+    },
+    "stdio": {
+      "command": "npx",
+      "args": ["-y", "@massnerder/x402-scraper-mcp"]
     }
   },
   "payment": {
