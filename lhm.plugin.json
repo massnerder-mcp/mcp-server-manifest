@@ -1,9 +1,26 @@
 {
   "identifier": "massnerder-mcp-web-scraper",
   "name": "Multi-Tier Web Scraper & Structured Data MCP Gateway",
-  "version": "1.1.0",
-  "description": "Tiered x402 web extraction gateway on Base: $0.01 fast HTML-to-Markdown and XML sitemap discovery, $0.05 Schema.org JSON-LD structured data, $0.10 residential proxy anti-bot bypass, and $0.25 multi-URL batch scraping.",
-  "tags": ["web-scraping", "scraper", "web", "proxy", "x402", "micropayments", "json-ld", "sitemap"],
-  "cloudEndpoint": "https://fretful-flap.ngrok.dev"
+  "version": "2.0.0",
+  "description": "Tiered x402 web extraction gateway on Base: $0.01 fast HTML-to-Markdown and XML sitemap discovery, $0.05 Schema.org JSON-LD structured data, $0.10 residential proxy and headless Chromium anti-bot bypass, and $0.25 multi-URL batch scraping (up to 10 URLs).",
+  "tags": [
+    "web-scraping",
+    "scraper",
+    "web",
+    "proxy",
+    "x402",
+    "micropayments",
+    "json-ld",
+    "sitemap",
+    "playwright"
+  ],
+  "cloudEndpoint": "https://fretful-flap.ngrok.dev/mcp",
+  "endpoints": {
+    "streamableHttp": "https://fretful-flap.ngrok.dev/mcp",
+    "sse": "https://fretful-flap.ngrok.dev/mcp/sse",
+    "health": "https://fretful-flap.ngrok.dev/health",
+    "paymentInfo": "https://fretful-flap.ngrok.dev/get_service_info",
+    "llmsTxt": "https://fretful-flap.ngrok.dev/llms.txt"
+  }
 }
 
